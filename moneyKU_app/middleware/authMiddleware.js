@@ -40,30 +40,6 @@ async function authenticateUser(req, res, next) {
 module.exports = authenticateUser;
 
 
-// const { PrismaClient } = require('@prisma/client');
-
-// const prisma = new PrismaClient();
-
-// async function authenticateUser(req, res, next) {
-//   console.log('Request body:', req.body);
-//   const userId = req.user; 
-
-//   try {
-//     // Cari pengguna berdasarkan nama dan email
-//     const user = await prisma.user.findUnique({ where: { id: userId } }); //INI DIUBAH
-    
-//     // Periksa apakah pengguna ditemukan
-//     if (!user) {
-//       return res.status(401).json({ error: 'Unauthorized', message: 'Invalid name or email' });
-//     }
-
-//     req.user = { id: userId };
-//     next();
-//   } catch (error) {
-//     console.error('Error authenticating user:', error);
-//     res.status(500).json({ error: ':(((( :((((Error', message: 'Failed to authenticate user' });
-//   }
-// }
 
 // module.exports = authenticateUser;
 
