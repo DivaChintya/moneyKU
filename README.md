@@ -2,22 +2,22 @@
 Help you save your money by storing your history of transaction!
 
 # Features
-- User Registration:
+- User Registration 👨‍🦱:
 Users can register into the app by providing a name and email.
 When a new user registers, the app checks if the email has been used before.
-- User Authentication:
+- User Authentication 🤷‍♂️✅️❌️:
 Users can log into the app by providing their registered name and email.
 Upon successful authentication, the app generates a JWT token which is used for authorisation in subsequent requests.
-- Transaction Recording:
+- Transaction Recording🗒:
 Users can add new transactions to the system by providing information such as name, status, category, amount, and transaction date.
 The transaction data is stored in the database with respect to the user ID associated with the transaction.
-- Retrieval of Transaction Data:
+- Retrieval of Transaction Data📂:
 Users can retrieve all transactions associated with their account.
 Transactions are displayed based on the user ID given in the JWT token.
-- Transaction Update and Deletion:
+- Transaction Update and Deletion📥📤:
 Users can update existing transaction information, such as name, status, category, amount, and date.
 Users can also delete transactions that are no longer needed.
-- JWT Token Generation:
+- JWT Token Generation🔑:
 After a user successfully logs in, the application generates a JWT token that contains user information, such as ID, name, and email.
 This JWT token is used to identify and authenticate the user in every request they submit.
 
